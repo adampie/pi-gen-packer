@@ -45,13 +45,24 @@
     ],
 
     "post-processors": [
-      {
-        "output": "builds/pi-gen.box",
-        "compression_level": 9,
-        "type": "vagrant",
-        "only": ["virtualbox-iso"]
+    [{
+      "type": "vagrant",
+      "keep_input_artifact": false,
+      "output": "builds/pi-gen.box",
+      "compression_level": 9
+    },
+    {
+      "type": "atlas",
+      "only": ["virtualbox-iso"],
+      "artifact": "adampie/pi-gen",
+      "artifact_type": "vagrant.box",
+      "metadata": {
+        "provider": "virtualbox",
+        "version": "0.0.1",
+        "description": "A box that includes everything that is required for generating Raspbian images using pi-gen."
       }
-    ],
+    }]
+  ],
 
     "provisioners": [
       {
