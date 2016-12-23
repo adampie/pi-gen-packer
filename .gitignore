@@ -132,4 +132,7 @@ packer_cache/
 ### Vagrant ###
 .vagrant/
 
+#build folder#
+/builds/
+
 # End of https://www.gitignore.io/api/osx,windows,linux,jetbrains,ansible,packer,vagrant
