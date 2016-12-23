@@ -28,9 +28,6 @@ sudo pip install ansible
 echo "Removing VBoxGuest*"
 rm /home/vagrant/VBoxGuest*
 
-echo "CHOWN /home/vagrant"
-sudo chown -R vagrant /home/vagrant
-
 echo "Zeroing disk"
 dd if=/dev/zero of=/EMPTY bs=1M || true; sync; sleep 1; sync
 rm -f /EMPTY; sync; sleep 1; sync
