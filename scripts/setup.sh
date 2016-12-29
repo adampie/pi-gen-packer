@@ -29,7 +29,7 @@ echo "Removing VBoxGuest*"
 rm /home/vagrant/VBoxGuest*
 
 echo "Setting up update git repo on boot"
-sudo cd /etc/init.d/
+cd /etc/init.d/
 sudo cat <<EOF >> update-pi-gen.sh
 #!/bin/bash
 cd /home/vagrant/pi-gen && git pull
