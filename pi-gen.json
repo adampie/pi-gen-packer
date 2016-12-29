@@ -58,7 +58,7 @@
       "artifact_type": "vagrant.box",
       "metadata": {
         "provider": "virtualbox",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "description": "A box that includes everything that is required for generating Raspbian images using pi-gen."
       }
     }]

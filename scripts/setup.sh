@@ -28,6 +28,15 @@ sudo pip install ansible
 echo "Removing VBoxGuest*"
 rm /home/vagrant/VBoxGuest*
 
+echo "Setting up update git repo on boot"
+sudo cd /etc/init.d/
+sudo cat <<EOF >> update-pi-gen.sh
+#!/bin/bash
+cd /home/vagrant/pi-gen && git pull
+EOF
+sudo chmod +x update-pi-gen.sh
+update-rc.d update-pi-gen.sh defaults 100
+
 echo "Zeroing disk"
 dd if=/dev/zero of=/EMPTY bs=1M || true; sync; sleep 1; sync
 rm -f /EMPTY; sync; sleep 1; sync
