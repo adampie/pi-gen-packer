@@ -1,5 +1,7 @@
 # pi-gen-packer
 
+[![Build Status](https://travis-ci.org/adampie/pi-gen-packer.svg?branch=master)](https://travis-ci.org/adampie/pi-gen-packer)
+
 A box that includes everything that is required for generating Raspbian images using pi-gen.
 
 ## Getting Started
