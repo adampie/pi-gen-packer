@@ -1,14 +1,11 @@
 # pi-gen-packer
 
-[![Build Status](https://travis-ci.org/adampie/pi-gen-packer.svg?branch=master)](https://travis-ci.org/adampie/pi-gen-packer)
-
 A box that includes everything that is required for generating Raspbian images using pi-gen.
 
 ## Getting Started
 |Boxes|Url|
 |----|--------------|
 |Vagrant (VirtualBox)|https://atlas.hashicorp.com/adampie/boxes/pi-gen|
-|Docker|Soon|
 
 ### Prerequisites
 - VirtualBox
@@ -19,7 +16,6 @@ A box that includes everything that is required for generating Raspbian images u
 ```
 vagrant init adampie/pi-gen; vagrant up --provider virtualbox
 ```
-#### Docker
 
 ### How to run pi-gen?
 For more information on running pi-gen go [here](https://github.com/adampie/pi-gen)
